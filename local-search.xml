@@ -75,7 +75,7 @@
     <link href="/2020/10/15/TCP-IP-protocols/"/>
     <url>/2020/10/15/TCP-IP-protocols/</url>
     
-    <content type="html"><![CDATA[<h2 id="DNS-working-knowledge"><a href="#DNS-working-knowledge" class="headerlink" title="DNS working knowledge"></a>DNS working knowledge</h2><p>Domain lookup Service functions to translate URL into IP address.</p><p>Domain lookup service has many forms of implementation:</p><ul><li>NIS (Network Information Service)</li><li>DNS (Domain Name System)</li><li>local static files</li></ul><p>DNS request and respond format<br><img src="/DNS_request_form.png" alt="DNS rr format"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="DNS-working-knowledge"><a href="#DNS-working-knowledge" class="headerlink" title="DNS working knowledge"></a>DNS working knowledge</h2><p>Domain lookup Service functions to translate URL into IP address.</p><p>Domain lookup service has many forms of implementation:</p><ul><li>NIS (Network Information Service)</li><li>DNS (Domain Name System)</li><li>local static files</li></ul><p>DNS request and respond format<br><img src="/DNS_request_form.png" alt="DNS format"></p>]]></content>
     
     
     <categories>
