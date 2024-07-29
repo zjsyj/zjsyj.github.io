@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>common used CMD commands</title>
+    <link href="/2024/07/28/windows-commands/"/>
+    <url>/2024/07/28/windows-commands/</url>
+    
+    <content type="html"><![CDATA[<h2 id="dir"><a href="#dir" class="headerlink" title="dir"></a>dir</h2><p>列出目录中的文件和子目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs batch">dir C:\Users\SomeUsers<br>REM display with attributes<br>dir C:\Users\SomeUsers /A:D<br>REM list files with order<br>dir C:\Users\SomeUsers /O:S<br>dir C:\Users\SomeUsers /O:N<br>dir C:\Users\SomeUsers /O:D<br></code></pre></td></tr></table></figure><h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><p> 移动文件或重命名文件&#x2F;目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs batch">move C:\text1.txt D:\<br>move C:\test1.txt C:\test2.txt<br></code></pre></td></tr></table></figure><h2 id="xcopy"><a href="#xcopy" class="headerlink" title="xcopy"></a>xcopy</h2><p>extended copy</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs batch">REM copy files and subdirectory except for empty ones<br>xcopy C:\source D:\destination /s<br>REM copy files and subdirectory including empty ones<br>xcopy C:\source D:\destination /e<br></code></pre></td></tr></table></figure><h2 id="shutdown"><a href="#shutdown" class="headerlink" title="shutdown"></a>shutdown</h2><p>关机, 重启或注销计算机</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs batch">REM log offa<br>shutdown /l<br>REM shutdown computer right away<br>shutdown /s /t 0<br>REM reboot<br>shutdown /r /c &quot;rebooting your computer&quot;<br></code></pre></td></tr></table></figure><h2 id="tracert"><a href="#tracert" class="headerlink" title="tracert"></a>tracert</h2><p>跟踪数据包到达目标主机的路径</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs batch">tracert www.google.com<br></code></pre></td></tr></table></figure><h2 id="nslookup"><a href="#nslookup" class="headerlink" title="nslookup"></a>nslookup</h2><p>查询 DNS 信息</p><h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><p>搜索文本文件中的字符串</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs batch">find &quot;sim&quot; some.txt<br></code></pre></td></tr></table></figure><h2 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>C++</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo Commands</title>
     <link href="/2024/07/28/Hexo-Commands/"/>
     <url>/2024/07/28/Hexo-Commands/</url>
