@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Hexo Commands</title>
+    <link href="/2024/07/28/Hexo-Commands/"/>
+    <url>/2024/07/28/Hexo-Commands/</url>
+    
+    <content type="html"><![CDATA[<h2 id="hexo-new"><a href="#hexo-new" class="headerlink" title="hexo new"></a>hexo new</h2><p>默认情况下, hexo 会使用文章的标题来决定文章的路径</p><p>独立页面, hexo 会创建一个以标题为名字的目录, 并在目录中放置一个 <strong>index.md</strong></p><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">hexo <span class="hljs-built_in">new</span> page --path about/<span class="hljs-keyword">me</span> <span class="hljs-string">&quot;About Me&quot;</span><br></code></pre></td></tr></table></figure><h2 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo server"></a>hexo server</h2><p>启动服务器</p><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs axapta">hexo <span class="hljs-keyword">server</span> -p <span class="hljs-number">8080</span><br>hexo <span class="hljs-keyword">server</span> -l<br>hexo <span class="hljs-keyword">server</span> -s<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>TCP-Protocol</title>
     <link href="/2020/10/17/TCP-Protocol/"/>
     <url>/2020/10/17/TCP-Protocol/</url>
