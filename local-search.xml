@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>common used CMD commands</title>
+    <link href="/2024/07/28/windows-commands/"/>
+    <url>/2024/07/28/windows-commands/</url>
+    
+    <content type="html"><![CDATA[<h2 id="dir"><a href="#dir" class="headerlink" title="dir"></a>dir</h2><p>列出目录中的文件和子目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs batch">dir C:\Users\SomeUsers<br>REM display with attributes<br>dir C:\Users\SomeUsers /A:D<br>REM list files with order<br>dir C:\Users\SomeUsers /O:S<br>dir C:\Users\SomeUsers /O:N<br>dir C:\Users\SomeUsers /O:D<br></code></pre></td></tr></table></figure><h2 id="move"><a href="#move" class="headerlink" title="move"></a>move</h2><p> 移动文件或重命名文件&#x2F;目录</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs batch">move C:\text1.txt D:\<br>move C:\test1.txt C:\test2.txt<br></code></pre></td></tr></table></figure><h2 id="xcopy"><a href="#xcopy" class="headerlink" title="xcopy"></a>xcopy</h2><p>extended copy</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs batch">REM copy files and subdirectory except for empty ones<br>xcopy C:\source D:\destination /s<br>REM copy files and subdirectory including empty ones<br>xcopy C:\source D:\destination /e<br></code></pre></td></tr></table></figure><h2 id="shutdown"><a href="#shutdown" class="headerlink" title="shutdown"></a>shutdown</h2><p>关机, 重启或注销计算机</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs batch">REM log offa<br>shutdown /l<br>REM shutdown computer right away<br>shutdown /s /t 0<br>REM reboot<br>shutdown /r /c &quot;rebooting your computer&quot;<br></code></pre></td></tr></table></figure><h2 id="tracert"><a href="#tracert" class="headerlink" title="tracert"></a>tracert</h2><p>跟踪数据包到达目标主机的路径</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs batch">tracert www.google.com<br></code></pre></td></tr></table></figure><h2 id="nslookup"><a href="#nslookup" class="headerlink" title="nslookup"></a>nslookup</h2><p>查询 DNS 信息</p><h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><p>搜索文本文件中的字符串</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs batch">find &quot;sim&quot; some.txt<br></code></pre></td></tr></table></figure><h2 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>C++</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo Commands</title>
+    <link href="/2024/07/28/Hexo-Commands/"/>
+    <url>/2024/07/28/Hexo-Commands/</url>
+    
+    <content type="html"><![CDATA[<h2 id="hexo-new"><a href="#hexo-new" class="headerlink" title="hexo new"></a>hexo new</h2><p>默认情况下, hexo 会使用文章的标题来决定文章的路径</p><p>独立页面, hexo 会创建一个以标题为名字的目录, 并在目录中放置一个 <strong>index.md</strong></p><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">hexo <span class="hljs-built_in">new</span> page --path about/<span class="hljs-keyword">me</span> <span class="hljs-string">&quot;About Me&quot;</span><br></code></pre></td></tr></table></figure><h2 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo server"></a>hexo server</h2><p>启动服务器</p><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs axapta">hexo <span class="hljs-keyword">server</span> -p <span class="hljs-number">8080</span><br>hexo <span class="hljs-keyword">server</span> -l<br>hexo <span class="hljs-keyword">server</span> -s<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>TCP-Protocol</title>
+    <link href="/2020/10/17/TCP-Protocol/"/>
+    <url>/2020/10/17/TCP-Protocol/</url>
+    
+    <content type="html"><![CDATA[<h2 id="TCP-服务的特点"><a href="#TCP-服务的特点" class="headerlink" title="TCP 服务的特点"></a>TCP 服务的特点</h2><p>传输层协议主要有两个:</p><ul><li>TCP 协议</li><li>UDP 协议</li></ul><p>相比较于 UDP, TCP 面向连接, 字节流, 可靠传输</p><p>UDP 适合于广播和多播 (目标是多个主机), TCP 连接属于一对一</p><p>TCP 传输是可靠的</p><ul><li>TCP 协议采用了发送应答机制</li><li>TCP 协议采用了超时重传机制</li><li>TCP 报文最终是以 IP 数据报发送的, 有可能会乱序, TCP 协议会对 TCP 报文段重排、整理, 再交付给应用层</li></ul><h2 id="TCP-头部信息"><a href="#TCP-头部信息" class="headerlink" title="TCP 头部信息"></a>TCP 头部信息</h2><p>指定通信的源端口, 目的端口, 管理 TCP 连接</p><p>![.&#x2F;TCP-Protocol&#x2F;TCP_Header.png](Header Format)</p><ul><li>src port number, dest port number</li><li>Seq Number</li><li>ACK Number</li><li>header length</li></ul><p>六位标志位:</p><ul><li>URG, urgent point 是否有效</li><li>ACK, 表示确认号是否有效</li><li>PSH,</li><li>RST, 表示对方重新建立连接</li><li>SYN, 表示请求建立一个连接</li><li>FIN, 表示通知对方本端要关闭连接</li></ul><p>16 位窗口大小, 接收通告窗口, 告诉对方本端接收缓存区还能容纳多少字节的数据</p><p>头部选项</p><h2 id="TCP-状态转移"><a href="#TCP-状态转移" class="headerlink" title="TCP 状态转移"></a>TCP 状态转移</h2><p>建立连接, 三次握手<br>断开连接, 四次挥手</p><p>half close, 半关闭状态, 通信一端告诉另外一端, 本端数据已经完成了数据发送, 但允许继续接收来自对方的数据, 直到对方也发送结束报文段关闭连接</p><p>超时重传</p><h2 id="TCP-数据流"><a href="#TCP-数据流" class="headerlink" title="TCP 数据流"></a>TCP 数据流</h2><p>交互数据流和成块数据流</p><h2 id="TCP-数据流的控制"><a href="#TCP-数据流的控制" class="headerlink" title="TCP 数据流的控制"></a>TCP 数据流的控制</h2><p>超时重传和拥塞控制</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>C++</category>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux Server Programming</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>IP Protocol</title>
+    <link href="/2020/10/15/IP-Protocol/"/>
+    <url>/2020/10/15/IP-Protocol/</url>
+    
+    <content type="html"><![CDATA[<p>两个部分</p><ul><li>IP头部信息</li><li>IP数据报的转发和路由</li></ul><h2 id="IP服务的特点"><a href="#IP服务的特点" class="headerlink" title="IP服务的特点"></a>IP服务的特点</h2><ul><li>stateless (无状态), Nth 数据报比 (N+1)th 数据报先到; Nth 数据报多次到达; 优点, 高效, 简单</li><li>connectionless (无连接), 必须多次指定 IP 源地址和目标地址</li><li>不可靠, 不保证数据报准确到达接收端</li></ul><h2 id="IPV4的头部"><a href="#IPV4的头部" class="headerlink" title="IPV4的头部"></a>IPV4的头部</h2><ul><li>TTL (Time to Live), 数据报到达目的端经过的路由器跳数, 值每经过一次路由减一, 为0时丢弃数据报</li><li>8位 (protocol), ICMP为1, TCP为6, UDP为17</li></ul><h2 id="IP-路由"><a href="#IP-路由" class="headerlink" title="IP 路由"></a>IP 路由</h2><p>IP 协议的一个核心任务是数据报的路由, 即决定发送数据包到目标机器的路径</p><p><strong>route</strong> 和 <strong>netstat</strong> 命令可以查看路由表</p><ul><li>路由机制</li><li>路由表更新</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>C++</category>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux Server Programming</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>TCP/IP protocols</title>
+    <link href="/2020/10/15/TCP-IP-protocols/"/>
+    <url>/2020/10/15/TCP-IP-protocols/</url>
+    
+    <content type="html"><![CDATA[<h2 id="DNS-working-knowledge"><a href="#DNS-working-knowledge" class="headerlink" title="DNS working knowledge"></a>DNS working knowledge</h2><p>Domain lookup Service functions to translate URL into IP address.</p><p>Domain lookup service has many forms of implementation:</p><ul><li>NIS (Network Information Service)</li><li>DNS (Domain Name System)</li><li>local static files</li></ul><p>DNS request and respond format<br><img src="/DNS_request_form.png" alt="DNS format"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>C++</category>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux Server Programming</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Writing Practice 01</title>
+    <link href="/2020/10/13/Writing-Practice-01/"/>
+    <url>/2020/10/13/Writing-Practice-01/</url>
+    
+    <content type="html"><![CDATA[<h2 id="how-to-use-neither-nor-either-or-correctly"><a href="#how-to-use-neither-nor-either-or-correctly" class="headerlink" title="how to use neither&#x2F;nor, either&#x2F;or correctly"></a>how to use neither&#x2F;nor, either&#x2F;or correctly</h2><p><strong>Neither</strong> always pair with <strong>Nor</strong>, <strong>Either</strong> always pair with <strong>Or</strong></p><h3 id="example"><a href="#example" class="headerlink" title="example"></a>example</h3><ul><li>Neither My friedn nor I have passed the exam</li><li>I would love to drink either coffee or tea</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>English Writing</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>English Writing</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
