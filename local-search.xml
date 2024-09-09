@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>github ci/cd</title>
+    <link href="/2024/09/04/github-ci-cd/"/>
+    <url>/2024/09/04/github-ci-cd/</url>
+    
+    <content type="html"><![CDATA[<h2 id="GitHub-Actions-是什么"><a href="#GitHub-Actions-是什么" class="headerlink" title="GitHub Actions 是什么"></a>GitHub Actions 是什么</h2><p>持续集成由很多操作组成, 比如抓取代码, 运行测试, 登录远程服务器, 发布到第三方服务等</p><p>这些操作被 GitHub 称为 “actions”, 每个 action 就是一个独立脚本</p><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ol><li>workflow, 持续集成一次运行的过程</li><li>job, 一个 workflow 由一个或多个 jobs 构成, 称为一个任务</li><li>step, 完成一个任务需要多个步骤 (step) 构成</li><li>action, 每个步骤 (step) 一次执行一个或多个命令 (action)</li></ol><h2 id="workflow-文件"><a href="#workflow-文件" class="headerlink" title="workflow 文件"></a>workflow 文件</h2><p>存放在 .github&#x2F;worflows 目录下, 采用 YAML 格式, 文件名任意选取</p><p>基本字段</p><ul><li>name, <code>name: GitHub Action Demo</code></li><li>on, <code>on: push</code>, 触发 workflow 的条件</li><li>jobs.<job_id>.name</li><li>jobs.<job_id>.runs_on, 指定运行所需要的虚拟机环境</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Daily English</title>
     <link href="/2024/09/02/Daily-English/"/>
     <url>/2024/09/02/Daily-English/</url>
     
-    <content type="html"><![CDATA[<h2 id="sentences-from-Modern-Family"><a href="#sentences-from-Modern-Family" class="headerlink" title="sentences from Modern Family"></a>sentences from Modern Family</h2><ul><li>Keep your hands off my stuff</li><li>How can you turn your back on a friend like that</li><li>Where’s your mind?</li><li>He and I got into a fight</li><li>Off-ramp vs on-ramp</li><li>I couldn’t care less about x, y, z</li></ul><h2 id="sentences-from-Friends"><a href="#sentences-from-Friends" class="headerlink" title="sentences from Friends"></a>sentences from Friends</h2><ul><li>What’s the matter? It’s my father, he wants to give me a Mercedes convertible<br>That guy, he burns me up</li><li>His plan is to hook Monica with Bob and then take Angela back for himself</li><li>Move the green ottoman, Let’s just leave it there for a while</li><li>You hit the nail on the head</li><li>the lights dim</li><li>He fishes a card out of his pocket</li><li>Srub that Teflon pan with a plastic brush</li><li>Count me out&#x2F;in</li></ul><h2 id="sentences-from-JFroest-English"><a href="#sentences-from-JFroest-English" class="headerlink" title="sentences from JFroest English"></a>sentences from JFroest English</h2><ul><li>Ample time, more than enough</li><li>Staggering prices, shocking or surprisingly</li><li>Throw sb under the bus, harm sb to help yourself</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="sentences-from-Modern-Family"><a href="#sentences-from-Modern-Family" class="headerlink" title="sentences from Modern Family"></a>sentences from Modern Family</h2><ul><li>Keep your hands off my stuff</li><li>How can you turn your back on a friend like that</li><li>Where’s your mind?</li><li>He and I got into a fight</li><li>Off-ramp vs on-ramp</li><li>I couldn’t care less about x, y, z</li></ul><h2 id="sentences-from-Friends"><a href="#sentences-from-Friends" class="headerlink" title="sentences from Friends"></a>sentences from Friends</h2><ul><li>What’s the matter? It’s my father, he wants to give me a Mercedes convertible<br>That guy, he burns me up</li><li>His plan is to hook Monica with Bob and then take Angela back for himself</li><li>Move the green ottoman, Let’s just leave it there for a while</li><li>You hit the nail on the head</li><li>the lights dim</li><li>He fishes a card out of his pocket</li><li>Srub that Teflon pan with a plastic brush</li><li>Count me out&#x2F;in</li></ul><h2 id="sentences-from-JFroest-English"><a href="#sentences-from-JFroest-English" class="headerlink" title="sentences from JFroest English"></a>sentences from JFroest English</h2><ul><li>Ample time, more than enough</li><li>Staggering prices, shocking or surprisingly</li><li>Throw sb under the bus, harm sb to help yourself</li></ul><h2 id="daily-english-words"><a href="#daily-english-words" class="headerlink" title="daily english words"></a>daily english words</h2><ul><li>concussion, gave myself a concussion because of running against a wall</li><li>I <strong>pull out</strong> my laptop so that I start working</li><li>Do you <strong>have</strong> your passport <strong>with</strong> you?</li><li>I want to <strong>go over</strong> these plans with you again</li></ul>]]></content>
     
     
     <categories>
