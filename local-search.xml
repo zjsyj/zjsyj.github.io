@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>single_cell</title>
+    <link href="/2024/11/15/single-cell/"/>
+    <url>/2024/11/15/single-cell/</url>
+    
+    <content type="html"><![CDATA[<h2 id="terminology"><a href="#terminology" class="headerlink" title="terminology"></a>terminology</h2><ul><li>cell barcode, a unique nucleotide string that identify 1 cell in the assay</li><li>UMI,unique molecule identifer, molecule barcode, UMI -&gt; Molecules -&gt; transcript -&gt; counts -&gt; nCount</li><li>nFeature is a unique gene and can be quantified 0 or more times.<br> As a simple example, if you have 1,000 reads for the SDC1 transcript (and nothing else),<br> then the nCount value is 1,000 and the nFeature value is 1</li></ul><h2 id="Seurat"><a href="#Seurat" class="headerlink" title="Seurat"></a>Seurat</h2><h2 id="Normalization"><a href="#Normalization" class="headerlink" title="Normalization"></a>Normalization</h2><p>Log normalized in this context means that the feature counts for each cell<br>are divided by the total counts for that cell and multiplied by the scale.factor<br>then natural-log transformed using log1p</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>R, single cell</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>useful tutorial URLs</title>
     <link href="/2024/10/15/useful-tutorial-URLs/"/>
     <url>/2024/10/15/useful-tutorial-URLs/</url>
     
-    <content type="html"><![CDATA[<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><ul><li><a href="https://shixiangwang.github.io/pybook/">https://shixiangwang.github.io/pybook/</a></li></ul><h2 id="single-cell-Seurat"><a href="#single-cell-Seurat" class="headerlink" title="single cell (Seurat)"></a>single cell (Seurat)</h2><ul><li><a href="https://www.bilibili.com/video/BV1Yz4216787/?spm_id_from=333.999.0.0&vd_source=b82d108a5b4edeb2f4bb6aa8209892d2">https://www.bilibili.com/video/BV1Yz4216787/?spm_id_from=333.999.0.0&amp;vd_source=b82d108a5b4edeb2f4bb6aa8209892d2</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="python"><a href="#python" class="headerlink" title="python"></a>python</h2><ul><li><a href="https://shixiangwang.github.io/pybook/">https://shixiangwang.github.io/pybook/</a></li></ul><h2 id="single-cell-Seurat"><a href="#single-cell-Seurat" class="headerlink" title="single cell (Seurat)"></a>single cell (Seurat)</h2><ul><li><a href="https://www.bilibili.com/video/BV1Yz4216787/?spm_id_from=333.999.0.0&vd_source=b82d108a5b4edeb2f4bb6aa8209892d2">https://www.bilibili.com/video/BV1Yz4216787/?spm_id_from=333.999.0.0&amp;vd_source=b82d108a5b4edeb2f4bb6aa8209892d2</a></li><li><a href="https://rnabio.org/">https://rnabio.org/</a></li></ul>]]></content>
     
     
     
@@ -34,7 +53,7 @@
     <link href="/2024/09/02/Daily-English/"/>
     <url>/2024/09/02/Daily-English/</url>
     
-    <content type="html"><![CDATA[<h2 id="sentences-from-Modern-Family"><a href="#sentences-from-Modern-Family" class="headerlink" title="sentences from Modern Family"></a>sentences from Modern Family</h2><ul><li>Keep your hands off my stuff</li><li>How can you turn your back on a friend like that</li><li>Where’s your mind?</li><li>He and I got into a fight</li><li>Off-ramp vs on-ramp</li><li>I couldn’t care less about x, y, z</li></ul><h2 id="sentences-from-Friends"><a href="#sentences-from-Friends" class="headerlink" title="sentences from Friends"></a>sentences from Friends</h2><ul><li>What’s the matter? It’s my father, he wants to give me a Mercedes convertible<br>That guy, he burns me up</li><li>His plan is to hook Monica with Bob and then take Angela back for himself</li><li>Move the green ottoman, Let’s just leave it there for a while</li><li>You hit the nail on the head</li><li>the lights dim</li><li>He fishes a card out of his pocket</li><li>Srub that Teflon pan with a plastic brush</li><li>Count me out&#x2F;in</li></ul><h2 id="sentences-from-JFroest-English"><a href="#sentences-from-JFroest-English" class="headerlink" title="sentences from JFroest English"></a>sentences from JFroest English</h2><ul><li>Ample time, more than enough</li><li>Staggering prices, shocking or surprisingly</li><li>Throw sb under the bus, harm sb to help yourself</li></ul><h2 id="daily-english-words"><a href="#daily-english-words" class="headerlink" title="daily english words"></a>daily english words</h2><ul><li>concussion, gave myself a concussion because of running against a wall</li><li>I <strong>pull out</strong> my laptop so that I start working</li><li>Do you <strong>have</strong> your passport <strong>with</strong> you?</li><li>I want to <strong>go over</strong> these plans with you again</li><li>because when you’re so jet lagged, your eyes sometimes actually just close on you</li></ul><h2 id="food"><a href="#food" class="headerlink" title="food"></a>food</h2><ul><li>these coffee beans are too <strong>old</strong> to have any flavour</li><li>let’s finish up the leftovers before they <strong>go bad</strong></li><li>does this smoothie smell <strong>off</strong> to you?</li><li>don’t eat it! it’s gone way past its *<em>best-before date</em></li><li>to stop your <strong>bread from going stale</strong>, put it in a sandwich bag</li><li>sometimes you can tell whether the food is spoiled or not just by looking at its package</li><li>this cheese have been here for months - it’s mouldy</li><li>*<em>rotten potatoes</em>, *<em>rotten eggs</em></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="sentences-from-Modern-Family"><a href="#sentences-from-Modern-Family" class="headerlink" title="sentences from Modern Family"></a>sentences from Modern Family</h2><ul><li>Keep your hands off my stuff</li><li>How can you turn your back on a friend like that</li><li>Where’s your mind?</li><li>He and I got into a fight</li><li>Off-ramp vs on-ramp</li><li>I couldn’t care less about x, y, z</li></ul><h2 id="sentences-from-Friends"><a href="#sentences-from-Friends" class="headerlink" title="sentences from Friends"></a>sentences from Friends</h2><ul><li>What’s the matter? It’s my father, he wants to give me a Mercedes convertible<br>That guy, he burns me up</li><li>His plan is to hook Monica with Bob and then take Angela back for himself</li><li>Move the green ottoman, Let’s just leave it there for a while</li><li>You hit the nail on the head</li><li>the lights dim</li><li>He fishes a card out of his pocket</li><li>Srub that Teflon pan with a plastic brush</li><li>Count me out&#x2F;in</li></ul><h2 id="sentences-from-JFroest-English"><a href="#sentences-from-JFroest-English" class="headerlink" title="sentences from JFroest English"></a>sentences from JFroest English</h2><ul><li>Ample time, more than enough</li><li>Staggering prices, shocking or surprisingly</li><li>Throw sb under the bus, harm sb to help yourself</li></ul><h2 id="daily-english-words"><a href="#daily-english-words" class="headerlink" title="daily english words"></a>daily english words</h2><ul><li>concussion, gave myself a concussion because of running against a wall</li><li>I <strong>pull out</strong> my laptop so that I start working</li><li>Do you <strong>have</strong> your passport <strong>with</strong> you?</li><li>I want to <strong>go over</strong> these plans with you again</li><li>because when you’re so jet lagged, your eyes sometimes actually just close on you</li><li>I will be at peace with who I am becuase I know I’m all right</li></ul><h2 id="food"><a href="#food" class="headerlink" title="food"></a>food</h2><ul><li>these coffee beans are too <strong>old</strong> to have any flavour</li><li>let’s finish up the leftovers before they <strong>go bad</strong></li><li>does this smoothie smell <strong>off</strong> to you?</li><li>don’t eat it! it’s gone way past its *<em>best-before date</em></li><li>to stop your <strong>bread from going stale</strong>, put it in a sandwich bag</li><li>sometimes you can tell whether the food is spoiled or not just by looking at its package</li><li>this cheese have been here for months - it’s mouldy</li><li>*<em>rotten potatoes</em>, <strong>rotten eggs</strong></li></ul>]]></content>
     
     
     <categories>
