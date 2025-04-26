@@ -25,8 +25,9 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://compgenomr.github.io/book/images/centDogma.png">
 <meta property="og:image" content="https://compgenomr.github.io/book/images/TransSplice.png">
+<meta property="og:image" content="https://compgenomr.github.io/book/images/regulationSummary.png">
 <meta property="article:published_time" content="2024-11-16T03:33:04.000Z">
-<meta property="article:modified_time" content="2025-04-23T02:41:13.683Z">
+<meta property="article:modified_time" content="2025-04-26T18:45:57.093Z">
 <meta property="article:author" content="Jiasheng">
 <meta property="article:tag" content="R, single cell">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          261 words
+          282 words
         
       </span>
     
@@ -308,7 +309,8 @@
 <li>Peak中的Fragment数量&#x2F;比例</li>
 <li>blacklist 区域, ENCODE提供, 这是需要去除的技术假阳性</li>
 </ul>
-<h2 id="Computational-Genomics-with-R"><a href="#Computational-Genomics-with-R" class="headerlink" title="Computational Genomics with R"></a><a href="%22https://compgenomr.github.io/book/%22">Computational Genomics with R</a></h2><h3 id="introduction-to-Genomics"><a href="#introduction-to-Genomics" class="headerlink" title="introduction to Genomics"></a>introduction to Genomics</h3><p>the molecule of DNA, a polymer made of recurring nucleoties(A,C,G,T)</p>
+<h2 id="Computational-Genomics-with-R"><a href="#Computational-Genomics-with-R" class="headerlink" title="Computational Genomics with R"></a>Computational Genomics with R</h2><p>“<a target="_blank" rel="noopener" href="https://compgenomr.github.io/book/">https://compgenomr.github.io/book/</a>“</p>
+<h3 id="introduction-to-Genomics"><a href="#introduction-to-Genomics" class="headerlink" title="introduction to Genomics"></a>introduction to Genomics</h3><p>the molecule of DNA, a polymer made of recurring nucleoties(A,C,G,T)</p>
 <p>DNA is wrapped around proteins(<em>histones</em>) forming higer-structures like nucleosome which make up <em>chromatins and chromosomes</em></p>
 <p align="center">
     <img src="https://compgenomr.github.io/book/images/centDogma.png" srcset="/img/loading.gif" lazyload />
@@ -320,6 +322,31 @@
     <img src="https://compgenomr.github.io/book/images/TransSplice.png" srcset="/img/loading.gif" lazyload />
 </p>
 
+<h4 id="transcription-regulation"><a href="#transcription-regulation" class="headerlink" title="transcription regulation"></a>transcription regulation</h4><p>the rate of transcription initiation is the primary regulatory element in gene expression regulation.</p>
+<p>the rate is controlled by core promoters as well as enhancers</p>
+<p>transcription factors are proteins that recognize a specific DNA motif to bind on a regulatory region and regulate the transcription rate of the gene associated with that regulatory region</p>
+<p align="center">
+    <img src="https://compgenomr.github.io/book/images/regulationSummary.png" srcset="/img/loading.gif" lazyload />
+</p>
+
+<p><em>distal</em> refers to sites located away from a specific area while <em>proximal</em> is tits opposite</p>
+<p><em>Epigenetic</em> in biology usually refers to constructions(chromatin structure, DNA methylation, etc) other than DNA sequence that influence gene regulation</p>
+<p>epigenetic regulation is the regulation of DNA packing and structure</p>
+<ul>
+<li>DNA modification</li>
+<li>histone modification</li>
+</ul>
+<p><strong>heterogeneous</strong>, &#x2F;hedərəˈjēnēəs&#x2F;</p>
+<h4 id="Shaping-the-genome-DNA-mutation"><a href="#Shaping-the-genome-DNA-mutation" class="headerlink" title="Shaping the genome: DNA mutation"></a>Shaping the genome: DNA mutation</h4><p><em>natural selection</em></p>
+<p>By their effection on DNA structure the mutations are classified as follows:</p>
+<ul>
+<li>Base substitution</li>
+<li>Deletion</li>
+<li>Insertion</li>
+<li>Microsatellite mutation</li>
+<li>Inversion</li>
+<li>Translocation</li>
+</ul>
 <h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>If we wanted to use it in a pipeline, we can do so by writing data &#x3D; _ in the function’s arguments.<br>In pipelines, _ is called a placeholder, and is a shorthand for “the<br>output from the left-hand side of the pipe operator”</p>
 
                 
