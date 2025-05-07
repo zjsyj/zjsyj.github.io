@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://compgenomr.github.io/book/images/TransSplice.png">
 <meta property="og:image" content="https://compgenomr.github.io/book/images/regulationSummary.png">
 <meta property="article:published_time" content="2024-11-16T03:33:04.000Z">
-<meta property="article:modified_time" content="2025-04-26T18:45:57.093Z">
+<meta property="article:modified_time" content="2025-05-07T02:29:38.501Z">
 <meta property="article:author" content="Jiasheng">
 <meta property="article:tag" content="R, single cell">
 <meta name="twitter:card" content="summary_large_image">
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          282 words
+          317 words
         
       </span>
     
@@ -281,6 +281,8 @@
 <li>cell barcode, a unique nucleotide string that identify 1 cell in the assay</li>
 <li>UMI,unique molecule identifer, molecule barcode, UMI -&gt; Molecules -&gt; transcript -&gt; counts -&gt; nCount</li>
 <li>nFeature is a unique gene and can be quantified 0 or more times.<br> As a simple example, if you have 1,000 reads for the SDC1 transcript (and nothing else),<br> then the nCount value is 1,000 and the nFeature value is 1</li>
+<li>The standard deviation describes variability within a single sample</li>
+<li>The standard error estimates the variability across multiple samples of a population</li>
 </ul>
 <h2 id="Seurat"><a href="#Seurat" class="headerlink" title="Seurat"></a>Seurat</h2><h4 id="Normalization"><a href="#Normalization" class="headerlink" title="Normalization"></a>Normalization</h4><p>Log normalized in this context means that the feature counts for each cell<br>are divided by the total counts for that cell and multiplied by the scale.factor<br>then natural-log transformed using log1p</p>
 <h2 id="scATAC-seq"><a href="#scATAC-seq" class="headerlink" title="scATAC-seq"></a>scATAC-seq</h2><p>转坐酶（Transpose）检测染色质开放性（Accessibility）结合高通量测序（Assay for Transposase-Accessible Chromatin with high-throughput sequencing，ATAC-Seq）技术能够一次性检测样本中染色质的开放性</p>
@@ -347,7 +349,38 @@
 <li>Inversion</li>
 <li>Translocation</li>
 </ul>
-<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>If we wanted to use it in a pipeline, we can do so by writing data &#x3D; _ in the function’s arguments.<br>In pipelines, _ is called a placeholder, and is a shorthand for “the<br>output from the left-hand side of the pipe operator”</p>
+<h3 id="R-for-genomic-data-analysis"><a href="#R-for-genomic-data-analysis" class="headerlink" title="R for genomic data analysis"></a>R for genomic data analysis</h3><p>Generally speaking, data analysis steps includes <em>data collection</em>, quality check and cleaning, processing, modeling, visualization, reporting</p>
+<h3 id="Statistics-for-Genomics"><a href="#Statistics-for-Genomics" class="headerlink" title="Statistics for Genomics"></a>Statistics for Genomics</h3><p>the mean of the population vs the mean of sample</p>
+<p>describe the central tendency:</p>
+<ul>
+<li>mean</li>
+<li>median</li>
+</ul>
+<p>describe the spread:</p>
+<ul>
+<li>variance</li>
+<li>standard deviation</li>
+</ul>
+<p>some functions and distributions used in Bioinformatics:</p>
+<ul>
+<li><em>dbinom</em> is for the binomial distribution,for modeling fractioal data and binary data, for example methylation data</li>
+<li><em>dpois</em> is used for the Poisson distribution and <em>dnbinom</em> is used for the negative binomial distribution, modeling count data such as sequencing read counts</li>
+<li><em>df</em> is used for F distribution and <em>dchisq</em> is is used for chi-squared distribution. they are used in relation to distribution of variation.</li>
+</ul>
+<p>unbiased estimation</p>
+<h4 id="how-to-test-for-differences-between-samples"><a href="#how-to-test-for-differences-between-samples" class="headerlink" title="how to test for differences between samples"></a>how to test for differences between samples</h4><ul>
+<li>decide on a hypothesis to test, eg null hypothesis</li>
+<li>decide on a statistic to test the truth of the null hypothesis</li>
+<li>calculate the statistic</li>
+<li>compare it to reference values to establish significance, pvalue</li>
+</ul>
+<p>to test the difference for the means</p>
+<ul>
+<li>randomization-based testing</li>
+<li>t-test</li>
+</ul>
+<hr>
+<h2 id="empty-H0-is-TRUE-H1-is-TRUE"><a href="#empty-H0-is-TRUE-H1-is-TRUE" class="headerlink" title="|:empty:|:H0 is TRUE:|:H1 is TRUE:|"></a>|:empty:|:H0 is TRUE:|:H1 is TRUE:|</h2><h2 id="accept-H0-True-Negatives-TN-False-Negative-FN-type-II-error-reject-H0-False-Positive-FP-type-I-error-True-Positives-TP"><a href="#accept-H0-True-Negatives-TN-False-Negative-FN-type-II-error-reject-H0-False-Positive-FP-type-I-error-True-Positives-TP" class="headerlink" title="|accept H0| True Negatives(TN) | False Negative(FN), type II error||reject H0| False Positive(FP), type I error| True Positives(TP) |"></a>|accept H0| True Negatives(TN) | False Negative(FN), type II error|<br>|reject H0| False Positive(FP), type I error| True Positives(TP) |</h2><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><p>If we wanted to use it in a pipeline, we can do so by writing data &#x3D; _ in the function’s arguments.<br>In pipelines, _ is called a placeholder, and is a shorthand for “the<br>output from the left-hand side of the pipe operator”</p>
 
                 
               </div>
