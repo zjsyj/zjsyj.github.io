@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Deep Learning</title>
+    <link href="/2025/07/06/Deep-Learning/"/>
+    <url>/2025/07/06/Deep-Learning/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Deep-Learning-with-PyTorch"><a href="#Deep-Learning-with-PyTorch" class="headerlink" title="Deep Learning with PyTorch"></a>Deep Learning with PyTorch</h3><p>this page is the summary from <a href="https://sebastianraschka.com/teaching/pytorch-1h/">PyTorch in one hour</a></p><p>In essence, PyTorch is composed of:</p><ul><li>Tensor library</li><li>Automatic differentiation engine</li><li>Deep learning library</li></ul><p><a href="https://sebastianraschka.com/images/teaching/pytorch-1h/figure_01.webp">img</a></p><p>deep learning is a subcategory of machine learning which is a subcategory of AI</p><p>deep learning focus on training and application of deep neural networks</p><p>deep learning is particularly good at handling unstructured data like images, audio, or text</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>single_cell</title>
     <link href="/2024/11/15/single-cell/"/>
     <url>/2024/11/15/single-cell/</url>
